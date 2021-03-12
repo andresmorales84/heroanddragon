@@ -15,7 +15,7 @@ while True:
     hero_hp=hero_hp-dragon_attack
     print("The dragon does", dragon_attack, "damage and the hero has", hero_hp, "hp left")
 
-    if hero_hp==0:
+    if hero_hp<=0:
         print("Unfortunately the dragon killed our hero. RIP sir Bravealot")
         break
 
@@ -23,7 +23,7 @@ while True:
     dragon_hp=dragon_hp-hero_attack
     print("The hero does", hero_attack, "damage and the dragon has", dragon_hp, "hp left")
 
-    if dragon_hp==0:
+    if dragon_hp<=0:
         print("Our valiant hero has slain the dragon!")
         break
     input("Round over. Press any key")
